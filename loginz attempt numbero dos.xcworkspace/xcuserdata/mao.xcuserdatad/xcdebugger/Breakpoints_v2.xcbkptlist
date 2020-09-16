@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D1CFA60F-3404-423B-918F-D5C5A1F730D2"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1622BBB8-5D04-44CD-8ECE-6205760976A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "loginz attempt numbero dos/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1622BBB8-5D04-44CD-8ECE-6205760976A2 - d41ed4998ceec9bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "loginz_attempt_numbero_dos.LoginViewController.login() -&gt; ()"
+                  moduleName = "loginz attempt numbero dos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mao/Desktop/loginz%20attempt%20numbero%20dos/loginz%20attempt%20numbero%20dos/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "590">
+               </Location>
+               <Location
+                  uuid = "1622BBB8-5D04-44CD-8ECE-6205760976A2 - 2fdd85f0aee989c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in loginz_attempt_numbero_dos.LoginViewController.login() -&gt; ()"
+                  moduleName = "loginz attempt numbero dos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mao/Desktop/loginz%20attempt%20numbero%20dos/loginz%20attempt%20numbero%20dos/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

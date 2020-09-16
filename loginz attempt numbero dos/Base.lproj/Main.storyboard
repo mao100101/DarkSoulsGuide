@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="loginz_attempt_numbero_dos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-nt-eLd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="817.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc3-Ds-cgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-souls-remasteredtitle" translatesAutoresizingMaskIntoConstraints="NO" id="M7c-WG-jw3">
+                                        <rect key="frame" x="0.0" y="64.5" width="414" height="265"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="265" id="3H9-aZ-xDk"/>
+                                            <constraint firstAttribute="width" constant="414" id="KKJ-tq-6Kd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-pe-XOe">
+                                        <rect key="frame" x="0.0" y="360.5" width="414" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-P7-i6P">
+                                        <rect key="frame" x="0.0" y="425.5" width="414" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_souls_remastered_art" translatesAutoresizingMaskIntoConstraints="NO" id="r5m-2n-dmO">
+                                        <rect key="frame" x="0.0" y="490.5" width="414" height="205"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="hql-S9-852"/>
+                                            <constraint firstAttribute="height" constant="205" id="kf5-5i-RwA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhY-CB-ujn">
+                                        <rect key="frame" x="0.0" y="726.5" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hx9-Qg-3zP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-ZH-8Uo">
+                                        <rect key="frame" x="0.0" y="787.5" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Create Account"/>
+                                        <connections>
+                                            <action selector="createAccounttapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHD-r1-N20"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="1rF-pe-XOe" id="6ar-He-klq"/>
+                        <outlet property="password" destination="Bh9-P7-i6P" id="jwh-rz-Jf5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="TSv-0A-wGV">
+            <objects>
+                <viewController storyboardIdentifier="signUp" id="I3z-7n-8Gf" customClass="SignUpViewController" customModule="loginz_attempt_numbero_dos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wgG-FS-qK3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="fGd-xc-XNy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="812.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rni-4N-r6j">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-souls-remasteredtitle" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-xL-oTS">
+                                        <rect key="frame" x="0.0" y="65.5" width="414" height="259"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="00o-QV-xr5"/>
+                                            <constraint firstAttribute="height" constant="259" id="CPT-lN-ZhG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-nv-PVq">
+                                        <rect key="frame" x="0.0" y="356.5" width="414" height="34"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-hB-Yh9">
+                                        <rect key="frame" x="0.0" y="422.5" width="414" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_souls_remastered_art" translatesAutoresizingMaskIntoConstraints="NO" id="8en-bY-cVZ">
+                                        <rect key="frame" x="0.0" y="488.5" width="414" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="F8F-Rl-gHD"/>
+                                            <constraint firstAttribute="width" constant="414" id="hu0-S0-Zfu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5h-Fe-wwP">
+                                        <rect key="frame" x="0.0" y="720.5" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUp:" destination="I3z-7n-8Gf" eventType="touchUpInside" id="28b-mP-AKe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-ke-vXf">
+                                        <rect key="frame" x="0.0" y="782.5" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Already Have An Account? Login"/>
+                                        <connections>
+                                            <action selector="alreadyHaveAnAccountLoginTapped:" destination="I3z-7n-8Gf" eventType="touchUpInside" id="ghk-pL-Jo3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d5w-Zw-n6X"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="LVh-nv-PVq" id="sn2-Jl-TIC"/>
+                        <outlet property="password" destination="ohU-hB-Yh9" id="7lI-8f-z35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjn-Iq-WYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="8q6-6o-MwR">
+            <objects>
+                <viewController id="kkQ-y0-LoS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5w-GA-Sbu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="j9Q-Iy-48l">
+                                <rect key="frame" x="50" y="133.5" width="314.5" height="629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Souls Boss Weapons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FA-oR-ztf">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abyss-greatsword-onhand-large" translatesAutoresizingMaskIntoConstraints="NO" id="Rqi-Su-2j8">
+                                        <rect key="frame" x="37" y="58.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="PSA-LU-HVN"/>
+                                            <constraint firstAttribute="width" constant="240" id="i1p-Be-d9j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abyss Great Sword" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-Fj-Mtj">
+                                        <rect key="frame" x="84" y="211.5" width="146" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avelyn_Ig" translatesAutoresizingMaskIntoConstraints="NO" id="Dpj-tI-S4P">
+                                        <rect key="frame" x="37" y="257" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Kht-4y-cJN"/>
+                                            <constraint firstAttribute="width" constant="240" id="T8v-GZ-PE5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avelyn Great Crossbow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucu-Q9-KC9">
+                                        <rect key="frame" x="68.5" y="410" width="177.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demon_Greataxe_IG" translatesAutoresizingMaskIntoConstraints="NO" id="TsI-71-bOQ">
+                                        <rect key="frame" x="37" y="455.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="5zj-qz-db0"/>
+                                            <constraint firstAttribute="height" constant="128" id="fdh-qG-hBr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demon Great Axe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riP-Kp-4eW">
+                                        <rect key="frame" x="90" y="608.5" width="134.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j9Q-Iy-48l" firstAttribute="centerX" secondItem="v5w-GA-Sbu" secondAttribute="centerX" id="5Kl-Fc-mK8"/>
+                            <constraint firstItem="j9Q-Iy-48l" firstAttribute="centerY" secondItem="v5w-GA-Sbu" secondAttribute="centerY" id="ci9-HC-FOW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Zq-AH-X0m"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1gq-a7-P6O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdu-DF-eQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962.3188405797105" y="118.52678571428571"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="waG-0j-DAV">
+            <objects>
+                <viewController storyboardIdentifier="mainHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Elf-EU-juT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tlQ-2Z-ZYw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nNo-YN-eCc">
+                                <rect key="frame" x="20" y="121.5" width="374" height="653"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="v0v-W0-sJ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="653"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Souls Bosses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-3v-RHe">
+                                                <rect key="frame" x="75.5" y="0.0" width="223" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="f4f-0r-ijE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DsArtorias" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfL-q4-0Ho">
+                                                <rect key="frame" x="67" y="51" width="240" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="4vz-6T-6QK"/>
+                                                    <constraint firstAttribute="width" constant="240" id="iwv-NC-Zc9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-mB-K97">
+                                                <rect key="frame" x="0.0" y="209" width="374" height="128"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="aDp-o3-oL2"/>
+                                                    <constraint firstAttribute="width" constant="374" id="mYh-9U-mcC"/>
+                                                </constraints>
+                                                <string key="text">Knight Artorias was one of the four Knights of Gwyn, the commanding knights of Lord Gwyn's army. Artorias had an unbendable will of steel, which both helped and fed his hatred for servants of the Dark, particularly the Darkwraiths of Kaathe.</string>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DsGwyn" translatesAutoresizingMaskIntoConstraints="NO" id="uag-aS-N2F">
+                                                <rect key="frame" x="67" y="367" width="240" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="nDH-DE-Pu8"/>
+                                                    <constraint firstAttribute="width" constant="240" id="oSd-a5-kkl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rm1-Yg-2QF">
+                                                <rect key="frame" x="0.0" y="525" width="374" height="128"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="Lbs-1K-L5D"/>
+                                                    <constraint firstAttribute="height" constant="128" id="Q0W-HE-T3G"/>
+                                                </constraints>
+                                                <string key="text">Gwyn, Lord of Cinder was greatest of the gods and a mighty warrior. He was known as the Lord of Sunlight and headed the efforts to end the Age of Ancients, together with Gravelord Nito, the Witch of Izalith, and the dragon-traitor, Seath the Scaleless. Leading his knights, he led the Gods to victory and oversaw the Age of Fire. Despite bequeathing elements of his soul to the Four Kings and Seath the Scaleless, his soul remains "a powerful thing indeed."</string>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="E2m-eK-giR"/>
+                                    <constraint firstAttribute="height" constant="653" id="hkQ-qo-Coc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nNo-YN-eCc" firstAttribute="centerY" secondItem="tlQ-2Z-ZYw" secondAttribute="centerY" id="7JE-mw-2tQ"/>
+                            <constraint firstItem="nNo-YN-eCc" firstAttribute="centerX" secondItem="tlQ-2Z-ZYw" secondAttribute="centerX" id="A2Z-qE-EaB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3MH-fv-j1R"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="hMH-7u-KhO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNX-iv-Cjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228.985507246377" y="118.52678571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9DK-lK-pLG">
+            <objects>
+                <tabBarController id="9vT-Jj-zXf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bds-U3-07a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Elf-EU-juT" kind="relationship" relationship="viewControllers" id="aJ0-bq-lrC"/>
+                        <segue destination="kkQ-y0-LoS" kind="relationship" relationship="viewControllers" id="Hrd-TP-J0K"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHP-gb-0pX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Avelyn_Ig" width="225" height="225"/>
+        <image name="Demon_Greataxe_IG" width="417.5" height="274.5"/>
+        <image name="DsArtorias" width="960" height="768"/>
+        <image name="DsGwyn" width="640" height="360"/>
+        <image name="abyss-greatsword-onhand-large" width="418" height="220"/>
+        <image name="dark-souls-remasteredtitle" width="1000" height="260"/>
+        <image name="dark_souls_remastered_art" width="960" height="540"/>
+    </resources>
+</document>
